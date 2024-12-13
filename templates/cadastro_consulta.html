@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+{%block conteudo %}
+<form class="form-control" action="{{url_for('cadastrar_consulta')}}" method="POST">
+    <label class="form-label">ID da consulta: </Label>
+    <input class="form-control" type="text" name="id_consulta" >
+    <hr>
+    <label class="form-label">ID do motivo:</label>
+    <input class="form-control" type="number" name="motivo_id" >
+    <hr>
+    <label class="form-label">Hora da consulta:</label>
+    <input class="form-control" type="text" name="hora" >
+    <hr>
+    <label class="form-label">Minuto da consulta:</label>
+    <input class="form-control" type="number" name="minuto" >
+    <hr>
+    <label class="form-label">Data da consulta:</label>
+    <input class="form-control" type="number" name="data" >
+    <hr>
+    <label class="form-label">ID do animal:</label>
+    <input class="form-control" type="number" name="idAnimal" >
+    <hr>
+    <label class="form-label">ID do veterinario:</label>
+    <input class="form-control" type="number" name="idVeterinario" >
+    <hr>
+    <button class="btn btn-success" >Adicionar</button>
+    <button><a class="{{url_for('pessoa')}}">Cancelar</a></button>
+</form>
+
+{%endblock %}

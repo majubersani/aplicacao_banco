@@ -1,0 +1,23 @@
+{%extends 'base.html'%}
+{%block conteudo %}
+<form class="form-control" action="{{url_for('cadastro_cliente')}}" method="POST">
+    <label class="form-label">CPF do cliente:</label>
+    <input class="form-control" type="number" name="CPF" >
+    <hr>
+    <label class="form-label">Nome do cliente:</label>
+    <input class="form-control" type="text" name="nome" >
+    <hr>
+    <label class="form-label">Telefone do cliente:</label>
+    <input class="form-control" type="text" name="telefone" >
+    <hr>
+    <label class="form-label">Profissão do cliente:</label>
+    <input class="form-control" type="text" name="profissao" >
+    <hr>
+    <label class="form-label">Area do cliente:</label>
+    <input class="form-control" type="text" name="area" >
+    <hr>
+    <button class="btn btn-success" >Adicionar</button>
+    <button><a class="{{url_for('cadastro')}}">Cancelar</a></button>
+</form>
+
+{%endblock %}

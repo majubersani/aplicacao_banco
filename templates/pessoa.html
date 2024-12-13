@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+<!-- inicio do corpo  da pagina que sera utilizada como template -->
+<main>
+    {% block conteudo%}
+    <h1>PESSOAS CADASTRADAS</h1>
+    <h1> {{enviar_html }} </h1>
+    {% for pessoa in var_pessoa %}
+        <p>{{pessoa}}</p>
+    {% endfor %}
+    {% endblock conteudo %}
+<!-- fim do corpo... -->
+</main>
+
+

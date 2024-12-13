@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block conteudo %}
+<form class="form-control" action="{{url_for('criar_pessoa')}}" method="POST">
+    <label class="form-label">Nome: </Label>
+    <input class="form-control" type="text" name="nome_pessoa" >
+    <hr>
+    <label class="form-label">sobrenome:</label>
+    <input class="form-control" type="text" name="sobrenome_pessoa" >
+    <hr>
+    <label class="form-label">CPF:</Label>
+    <input class="form-control" type="number" name="cpf_pessoa" >
+    <hr>
+    <button class="btn btn-success" >Adicionar</button>
+    <button><a class="{{url_for('pessoa')}}">Cancelar</a></button>
+</form>
+
+{%endblock %}

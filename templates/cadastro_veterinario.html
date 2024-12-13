@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block conteudo %}
+<form class="form-control" action="{{url_for('cadastro_veterinario1')}}" method="POST">
+    <label class="form-label">Salario do veterinario:</label>
+    <input class="form-control" type="text" name="salario" >
+    <hr>
+    <label class="form-label">Nome do veterinario:</label>
+    <input class="form-control" type="text" name="nomeVet" >
+    <hr>
+    <label class="form-label">CRMV do veterinario:</label>
+    <input class="form-control" type="text" name="crmv" >
+    <hr>
+    <label class="form-label">Valor da consulta:</label>
+    <input class="form-control" type="text" name="v_consulta" >
+    <hr>
+    <button class="btn btn-success" >Adicionar</button>
+    <button><a class="{{url_for('cadastro')}}">Cancelar</a></button>
+</form>
+
+{%endblock %}

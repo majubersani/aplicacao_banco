@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block conteudo %}
+<form class="form-control" action="{{url_for('cadastro_animal')}}" method="POST">
+    <label class="form-label">Nome do animal:</label>
+    <input class="form-control" type="text" name="nome_animal" >
+    <hr>
+    <label class="form-label">Raça do animal:</label>
+    <input class="form-control" type="text" name="raca" >
+    <hr>
+    <label class="form-label">Ano de nascimento do animal:</label>
+    <input class="form-control" type="text" name="anoNasci" >
+    <hr>
+    <button class="btn btn-success" >Adicionar</button>
+    <button><a class="{{url_for('cadastro')}}">Cancelar</a></button>
+</form>
+
+{%endblock %}

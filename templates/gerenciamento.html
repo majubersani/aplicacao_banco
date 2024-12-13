@@ -1,0 +1,19 @@
+Gerenciamento principal: {% extends 'base.html' %}
+
+{% block conteudo %}
+<div class="cards">
+    <p><a href="{{ url_for('gerenciamento_cliente') }}">Gerenciamento de Clientes</a></p>
+</div>
+<div class="cards">
+    <p><a href="{{ url_for('gerenciamento_animal') }}">Gerencimento de Animais</a></p>
+</div>
+<div class="cards">
+    <p><a href="{{ url_for('gerenciamento_veteterinario') }}">Genrenciamento de Veterinários</a></p>
+</div>
+<div class="cards">
+    <p><a href="{{ url_for('gerenciamento_venda')}}">Gerenciamento de Vendas</a></p>
+</div>
+<div class="cards">
+    <p><a href="{{ url_for('gerenciamento_consulta') }}">Gerenciamento de Consultas</a></p>
+</div>
+{% endblock %}

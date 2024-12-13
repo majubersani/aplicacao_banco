@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block conteudo %}
+<form class="form-control" action="{{url_for('cadastro_produto1')}}" method="POST">
+    <label class="form-label">Nome do produto:</label>
+    <input class="form-control" type="text" name="nome_produto" >
+    <hr>
+    <label class="form-label">Preço do produto:</label>
+    <input class="form-control" type="text" name="PRECO" >
+    <hr>
+    <label class="form-label">Categoria do produto:</label>
+    <input class="form-control" type="text" name="cat_produto" >
+    <hr>
+    <button class="btn btn-success" >Adicionar</button>
+    <button><a class="{{url_for('cadastro')}}">Cancelar</a></button>
+</form>
+
+{%endblock %}

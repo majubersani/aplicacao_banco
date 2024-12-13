@@ -1,0 +1,20 @@
+{%extends 'base.html'%}
+{%block conteudo %}
+<form class="form-control" action="{{url_for('cadastrar_venda')}}" method="POST">
+    <label class="form-label">Data da venda:</label>
+    <input class="form-control" type="number" name="data" >
+    <hr>
+    <label class="form-label">ID do produto:</label>
+    <input class="form-control" type="text" name="id_produto" >
+    <hr>
+    <label class="form-label">ID do cliente:</label>
+    <input class="form-control" type="number" name="id_cliente" >
+    <hr>
+    <label class="form-label">Quantidade de venda:</label>
+    <input class="form-control" type="number" name="qtd" >
+    <hr>
+    <button class="btn btn-success" >Adicionar</button>
+    <button><a class="{{url_for('pessoa')}}">Cancelar</a></button>
+</form>
+
+{%endblock %}
